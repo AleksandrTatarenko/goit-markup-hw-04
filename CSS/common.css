@@ -7,6 +7,7 @@
   --background-team: #f5f4fa;
   --text-adress: rgba(255, 255, 255, 0.6);
   --footer-icon-background: rgba(255, 255, 255, 0.1);
+  --icon: #afb1b8;
 }
 
 body {
@@ -44,12 +45,16 @@ a {
 .header-nav,
 .nav-list,
 .nav-contact {
-  display: flex;
+  display: inline-flex;
 }
 .header-nav {
   height: 31px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+}
+.logo-container {
+  display: inline-flex;
+  margin-right: 93px;
 }
 .logo {
   font-family: Raleway;
@@ -62,8 +67,11 @@ a {
 .logo-part {
   color: var(--text-h);
 }
-.link:last-child {
+.nav-list .list-item:not(:last-child) {
   margin-right: 50px;
+}
+.nav-list .list-item:last-child {
+  margin-right: 275px;
 }
 .link {
   font-family: Roboto;
