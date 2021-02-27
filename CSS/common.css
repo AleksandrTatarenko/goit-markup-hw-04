@@ -67,6 +67,9 @@ a {
 .logo-part {
   color: var(--text-h);
 }
+.main-page {
+  color: var(--text-focus);
+}
 .nav-list .list-item:not(:last-child) {
   margin-right: 50px;
 }
